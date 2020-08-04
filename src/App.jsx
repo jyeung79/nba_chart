@@ -2,6 +2,8 @@ import React from 'react';
 import { Scatter } from 'react-chartjs-2';
 import styled from 'styled-components';
 import dimensions from './styles/dimensions';
+import { teamRoster, playerStats, findName } from './stats';
+import SearchBar from './components/SearchBar';
 
 const data = {
   labels: ['Player1', 'Player2', 'Player3', 'Player4', 'Player5', 'Player6', 'Player7', 'Player11', 'Player12', 'Player13', 'Player14', 'Player15', 'Player16', 'Player17'],
@@ -114,9 +116,11 @@ const LayoutContainer = styled.div`
 
 
 function App() {
+
   return (
     <LayoutContainer className="App">
       <h1>Basketball Stats</h1>
+      <SearchBar />
       <div>
         <Scatter data={data} options={options}/>
       </div>
