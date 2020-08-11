@@ -1,4 +1,4 @@
-#NBA Player Comparison
+# NBA Player Comparison
 
 <img src='./src/images/nba_chart(InProgress).png' alt='in progress pic' />
 
