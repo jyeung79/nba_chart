@@ -1,9 +1,6 @@
-import PropTypes from 'prop-types';
 import _ from 'lodash';
-import React, { useState, useEffect} from 'react';
-import nba from 'nba';
-import { Search, Grid, Label } from 'semantic-ui-react';
-import { PLAYERSARR } from '../data/players.js';
+import React, { useState } from 'react';
+import { Search, Grid } from 'semantic-ui-react';
 import { NBAROSTER } from '../data/2019-2020NBAROSTER'
 
 const unwrap = ({name, imgURL, pos}) => ({name, imgURL, pos});
@@ -23,7 +20,10 @@ const SearchBar = () => {
     const [results, setResults] = useState([]);
     const [value, setValue] = useState('');
 
-    const handleResultSelect = (e, { result }) => setValue(result.name);
+    const handleResultSelect = (e, { result }) => {
+        setValue(result.title);
+        // function calls to get players stats and stuff
+    };
 
     const handleSearchChange = (e, { value }) => {
         setLoading(true);

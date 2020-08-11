@@ -1,8 +1,6 @@
 #NBA Player Comparison
 
-x-special/nautilus-clipboard
-copy
-file:///home/jeff/Pictures/nba_chart(InProgress).png
+<img src='./src/images/nba_chart(InProgress).png' alt='in progress pic' />
 
 Currently a Work-In-Progress
 
